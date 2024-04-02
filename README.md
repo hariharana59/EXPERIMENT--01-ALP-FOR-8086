@@ -57,134 +57,86 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-### Addition  of 8 bit ALP 
-```
-org 100h
-
-
-MOV Ax,24H
-MOV Bx,45H
-ADD Ax,Bx
-
-
-ret
-```
-
-### Subtraction   of 8 bit numbers  ALP 
-```
-org 100h
-
-MOV Ax,24H
-MOV Bx,45H
-SUB Ax,Bx
-
-ret
-```
-
-### Multiplication alp 
-```
-org 100h
-
-MOV Ax,24H
-MOV Bx,45H
-mul Bx
+## Addition  of 8 bit numbers ALP 
+```assembly
+MOV AL,88H
+MOV BL,65H
+ADD AL,BL
 HLT
-
-ret
 ```
+## Output  
+ ![ADDEX](https://github.com/JananiSoundararajan/EXPERIMENT--01-ALP-FOR-8086/assets/119477549/9b3a7e31-db56-4c0e-9b59-43fe21ab0371)
 
-### Division alp 
-```
-org 100h
-
-MOV Ax,24H
-MOV Bx,45H
-div Bx
+## Subtraction  of 8 bit numbers  ALP 
+```assembly
+MOV AL,84H
+MOV BL,63H
+SUB AL,BL
 HLT
+``` 
+## Output 
+![SUBEX](https://github.com/JananiSoundararajan/EXPERIMENT--01-ALP-FOR-8086/assets/119477549/fcb56b58-d90f-4cf2-850d-85c531d9862c)
 
-ret
-```
-
-## Output :
-
-### Addition  of 8 bit ALP 
-![image](https://github.com/Raji1009/EXPERIMENT--01-ALP-FOR-8086/assets/89059861/df0b443c-3358-4f73-a79e-06c82e876e59)
-
-
-### Subtraction   of 8 bit numbers  ALP 
-![image](https://github.com/Raji1009/EXPERIMENT--01-ALP-FOR-8086/assets/89059861/56e53da5-dc55-453d-8ef2-7c0b6e9b708f)
-
-
-### Multiplication alp 
-![image](https://github.com/Raji1009/EXPERIMENT--01-ALP-FOR-8086/assets/89059861/6fa61681-f75f-459a-997a-58863a2d6c92)
-
-
-### Division alp
-![image](https://github.com/Raji1009/EXPERIMENT--01-ALP-FOR-8086/assets/89059861/f1a9f266-25ba-4cd8-b6c2-959189fb37b6)
-
-## Programs for Logical  operations:
-
-### AND gate 
-```
-org 100h
-
-MOV Ax,24H
-MOV Bx,45H
-AND Ax,Bx
+## Multiplication of 8 bit numbers  ALP
+```assembly
+MOV AL,75H
+MOV BL,32H
+MUL BL
 HLT
-
-ret
 ```
+## Output  
+![MULEX](https://github.com/JananiSoundararajan/EXPERIMENT--01-ALP-FOR-8086/assets/119477549/d5f842ca-8113-4380-9948-2dd4089cb605)
 
-### OR gate
-```
-org 100h
-                                   
-MOV Ax,24H
-MOV Bx,45H
-OR Ax,Bx
+## Division of 8 bit numbers  ALP
+```assembly
+MOV AL,68H
+MOV BL,18H
+DIV BL
 HLT
-     
-ret
 ```
+## Output  
+![DIV EX](https://github.com/JananiSoundararajan/EXPERIMENT--01-ALP-FOR-8086/assets/119477549/b34c43fd-318d-4df8-995b-d4357456f886)
 
-### XOR gate
-```
-org 100h
-
-MOV Ax,24H
-MOV Bx,45H
-XOR Ax,Bx
+## And of 8 bit numbers ALP
+```assembly
+MOV AL,33H
+MOV BL,44H
+AND AL,BL
 HLT
-
-ret
 ```
+## Output
+![ANDEX](https://github.com/JananiSoundararajan/EXPERIMENT--01-ALP-FOR-8086/assets/119477549/137f8c67-17d9-4cc2-8437-349d50e0a404)
 
-### NOT gate
-```
-org 100h
-
-MOV Ax,24H
-NOT Ax
+## OR of 8 bit numbers ALP
+```assembly
+MOV AL,45H
+MOV BL,66H
+OR AL,BL
 HLT
+```
+## Output
+![OR EX](https://github.com/JananiSoundararajan/EXPERIMENT--01-ALP-FOR-8086/assets/119477549/d9fce991-bce0-4c58-a77c-2de3216f302d)
 
-ret
+## NOT of 8 bit number ALP
+```assembly
+MOV AL,65H
+NOT AL
+HLT
+```
+## Output
+![NOT EX](https://github.com/JananiSoundararajan/EXPERIMENT--01-ALP-FOR-8086/assets/119477549/a7efe90e-2100-4df5-8298-3516af3b7f65)
+
+## XOR of 8 bit number ALP
+```assembly
+MOV AL,66H
+MOV BL,77H
+XOR AL,BL
+HLT
 ```
 
-
-## OUTPUT:
-### AND gate 
-![Screenshot 2024-03-29 190642](https://github.com/Raji1009/EXPERIMENT--01-ALP-FOR-8086/assets/89059861/ac8e2d89-6f3a-4243-bf33-895b2788ed51)
-
-### OR gate
-![Screenshot 2024-03-29 190725](https://github.com/Raji1009/EXPERIMENT--01-ALP-FOR-8086/assets/89059861/2b5dc5ff-de02-473d-b0bc-ee9ba223a635)
-
-### XOR gate
-![image](https://github.com/Raji1009/EXPERIMENT--01-ALP-FOR-8086/assets/89059861/69775505-b9ee-40c0-9d59-217c2d098202)
-
-### NOT gate
-![image](https://github.com/Raji1009/EXPERIMENT--01-ALP-FOR-8086/assets/89059861/27718bc7-ffe9-4eeb-a3ea-680a6244a177)
-
+## Output
+![XOREX](https://github.com/JananiSoundararajan/EXPERIMENT--01-ALP-FOR-8086/assets/119477549/838fcf0e-3db2-4d6c-a9b6-0607b839726d)
 
 ## Result :
- Thus, A Program Is Develope To Write And Execute ALP On Fundamental Arithmetic And Logical Operations.
+
+The execution of ALP on fundamental arithmetic and logical operations is successfully completed.
